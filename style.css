@@ -1,0 +1,355 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Josefin";
+    src: url(assets/fonts/JosefinSans-Regular.ttf);
+}
+
+:root {
+    --primary-color: #ff9100;
+}
+
+body {
+    font-family: "Roboto" !important;
+}
+
+nav {
+    font-family: "Josefin" !important;
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+}
+
+.navbar-nav .btn {
+    transition: all .3s ease-out 0s;
+    background-image: linear-gradient(to left, #FF9100, #df7e00, #FF9100);
+    background-position: right;
+    background-size: 200%;
+}
+
+.navbar-nav .btn:hover {
+    background-position: left;
+    background-image: linear-gradient(to left, #FF9100, #df7e00, #FF9100);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    transition: all .3s ease-out 0s;
+}
+
+.hero-section {
+    height: 100vh;
+}
+
+.hero-section :nth-child(1) {
+    background-color: #FFDDB5;
+}
+
+.hero-section :nth-child(1) h1 {
+    font-family: "Josefin";
+    font-size: 55px;
+}
+
+.hero-section :nth-child(1) span {
+    color: var(--primary-color);
+}
+
+.hero-section :nth-child(1) button::after {
+    content: "";
+    width: 101%;
+    transform: scaleX(0);
+    height: 101%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    z-index: -1;
+    border-radius: 0.375rem;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.hero-section :nth-child(1) button {
+    background-color: var(--primary-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.4s linear;
+}
+
+.hero-section :nth-child(1) button:hover::after {
+    transform: scaleX(1);
+}
+
+.services-section .services-head :nth-child(1) {
+    font-family: "Josefin";
+}
+
+.services-section {
+    padding: 120px 0px;
+}
+
+.services-body .card h4 {
+    font-family: "Josefin";
+}
+
+.services-body .card-body a:hover {
+    border-color: var(--primary-color) !important;
+    letter-spacing: 0.5px;
+    color: var(--primary-color);
+
+}
+
+.services-body .card-body a {
+    transition: all .2s ease-out 0s;
+}
+
+.services-body .card:hover {
+    transition: all .4s ease-out 0s;
+    border: 1px solid transparent;
+    box-shadow: 0px 15px 25px rgba(168, 96, 0, 0.1);
+}
+
+.intro-section h1,
+.intro-section h2 {
+    font-family: "Josefin" !important;
+}
+
+.intro-section {
+    background-color: #FFE0BB;
+}
+
+.intro-section .col-12:nth-child(2) {
+    background-color: rgb(247, 242, 242);
+}
+
+.plans-section {
+    padding: 120px 0px;
+    background: linear-gradient(to bottom, var(--primary-color) 50%, transparent 50%);
+}
+
+.plans-body .card button::after {
+    content: "";
+    width: 101%;
+    transform: scaleX(0);
+    height: 101%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    z-index: -1;
+    border-radius: 0.375rem;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.plans-body .card button {
+    background-color: var(--primary-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.4s linear;
+}
+
+.plans-body .card button:hover::after {
+    transform: scaleX(1);
+}
+
+.plans-body .card:nth-child(2) {
+    box-shadow: 0px 15px 25px rgba(168, 96, 0, 0.1);
+}
+
+.plans-body .card:hover {
+    transition: all .4s ease-out 0s;
+    box-shadow: 0px 15px 25px rgba(168, 96, 0, 0.1);
+}
+
+.plans-body .card h1 {
+    font-family: "Josefin";
+    color: var(--primary-color);
+}
+
+.features-section i {
+    color: var(--primary-color);
+}
+
+.features-section .list-group-item {
+    color: #010a44 !important;
+    transition: 0.5s;
+    font-family: "Josefin";
+}
+
+.features-section .list-group-item:hover {
+    color: var(--primary-color) !important;
+}
+
+.features-section h1 {
+    font-family: "Josefin";
+    font-size: 46px;
+}
+
+.testinomials {
+    background-image: url(images/testinomial.png);
+    padding: 120px 0px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.quote-box h3 {
+    font-family: "Josefin";
+}
+
+.blog-section {
+    padding: 120px 0px;
+}
+
+.blog-section .blog-head h1 {
+    font-family: "Josefin";
+}
+
+.blog-body h4 {
+    font-family: "Josefin";
+    cursor: pointer;
+    transition: all .3s ease-out 0s;
+}
+
+.blog-body h4:hover {
+    color: var(--primary-color);
+}
+
+.blog-body .card:hover h4 {
+    text-decoration: underline;
+}
+
+.footer-section {
+    padding: 120px 0px;
+    background-color: black;
+    color: #949494;
+}
+
+.footer-section .list-group-item {
+    color: #949494;
+    width: 20px !important;
+    cursor: pointer;
+    transition: all .3s ease-out 0s;
+}
+
+.footer-section .list-group-item:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+.footer-section .list-group {
+    width: 20px !important;
+}
+
+.footer-section h4 {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.social-icons i {
+    transition: all .4s ease-out 0s;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #FF9100;
+    position: relative;
+    top: -5px !important;
+}
+
+.lower-footer i,
+.lower-footer a {
+    color: var(--primary-color);
+}
+
+#menu-bar {
+    background-color: #4c4c4c;
+    height: 45px;
+    margin: auto;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#menu-bar button {
+    background-color: #222;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    margin: 5px;
+}
+
+.top-icon {
+    transition: all .3s ease-out 0s;
+    width: 46px;
+    height: 46px;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed !important;
+    z-index: 100;
+    bottom: 15px;
+    right: 30px;
+    box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+    display: flex;
+    cursor: pointer;
+    color: white;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    background-color: #3b3a3a !important;
+    color: white;
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.menu ul li {
+    cursor: pointer;
+    padding: 10px !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li:hover {
+    background-color: white;
+}
+
+.menu ul li:hover a {
+    color: #222;
+}
+
+.hidden {
+    display: block !important;
+    transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 910px) {
+    #menu-bar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
